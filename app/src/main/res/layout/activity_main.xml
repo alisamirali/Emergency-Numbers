@@ -7,19 +7,6 @@
     tools:context=".MainActivity"
     android:background="#75a3a3">
 
-<!--    <TextView-->
-<!--        android:id="@+id/emergencyId"-->
-<!--        app:layout_constraintTop_toTopOf="parent"-->
-<!--        android:layout_marginTop="70dp"-->
-<!--        app:layout_constraintEnd_toEndOf="parent"-->
-<!--        app:layout_constraintStart_toStartOf="parent"-->
-<!--        android:text=" Emergency Numbers "-->
-<!--        android:textSize="35sp"-->
-<!--        android:textColor="@color/black"-->
-<!--        android:background="#00ffff"-->
-<!--        android:layout_width="wrap_content"-->
-<!--        android:layout_height="wrap_content"/>-->
-
     <ImageView
         android:id="@+id/policeImageId"
         android:layout_width="75dp"
@@ -27,7 +14,7 @@
         android:src="@drawable/policeman"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        android:layout_marginTop="75dp"
+        android:layout_marginTop="65dp"
         android:layout_marginLeft="20dp"
         android:layout_marginStart="20dp" />
 
