@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="#75a3a3">
+
+<!--    <TextView-->
+<!--        android:id="@+id/emergencyId"-->
+<!--        app:layout_constraintTop_toTopOf="parent"-->
+<!--        android:layout_marginTop="70dp"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        android:text=" Emergency Numbers "-->
+<!--        android:textSize="35sp"-->
+<!--        android:textColor="@color/black"-->
+<!--        android:background="#00ffff"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"/>-->
+
+    <ImageView
+        android:id="@+id/policeImageId"
+        android:layout_width="75dp"
+        android:layout_height="75dp"
+        android:src="@drawable/policeman"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="75dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginStart="20dp" />
+
+    <TextView
+        android:onClick="policeButton"
+        android:id="@+id/policeTextViewId"
+        app:layout_constraintStart_toEndOf="@id/policeImageId"
+        app:layout_constraintTop_toTopOf="@id/policeImageId"
+        app:layout_constraintBottom_toBottomOf="@id/policeImageId"
+        android:text=" Police "
+        android:textSize="30sp"
+        android:layout_marginLeft="15dp"
+        android:textColor="@color/black"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp" />
+
+    <ImageView
+        app:layout_constraintStart_toStartOf="@id/policeImageId"
+        app:layout_constraintTop_toBottomOf="@id/policeImageId"
+        android:layout_marginTop="28dp"
+        android:id="@+id/firemanImageId"
+        android:src="@drawable/fireman"
+        android:layout_width="75dp"
+        android:layout_height="75dp"/>
+
+    <TextView
+        android:onClick="fireButton"
+        app:layout_constraintStart_toEndOf="@id/firemanImageId"
+        app:layout_constraintTop_toTopOf="@id/firemanImageId"
+        app:layout_constraintBottom_toBottomOf="@id/firemanImageId"
+        android:text=" Fire Department "
+        android:textSize="30sp"
+        android:textColor="@color/black"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="12dp"
+        android:layout_marginLeft="12dp" />
+
+    <ImageView
+        app:layout_constraintStart_toStartOf="@id/firemanImageId"
+        app:layout_constraintTop_toBottomOf="@id/firemanImageId"
+        android:layout_marginTop="28dp"
+        android:id="@+id/ambulanceImageId"
+        android:src="@drawable/ambulance"
+        android:layout_width="75dp"
+        android:layout_height="75dp"/>
+
+    <TextView
+        android:onClick="ambulanceButton"
+        app:layout_constraintStart_toEndOf="@id/ambulanceImageId"
+        app:layout_constraintTop_toTopOf="@id/ambulanceImageId"
+        app:layout_constraintBottom_toBottomOf="@id/ambulanceImageId"
+        android:id="@+id/ambulanceTextViewId"
+        android:text=" Ambulance "
+        android:textSize="30sp"
+        android:textColor="@color/black"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="12dp"
+        android:layout_marginLeft="12dp"/>
+
+    <ImageView
+        app:layout_constraintStart_toStartOf="@id/ambulanceImageId"
+        app:layout_constraintTop_toBottomOf="@id/ambulanceImageId"
+        android:layout_marginTop="28dp"
+        android:id="@+id/childImageId"
+        android:src="@drawable/child"
+        android:layout_width="75dp"
+        android:layout_height="75dp"/>
+
+    <TextView
+        android:onClick="childButton"
+        app:layout_constraintStart_toEndOf="@id/childImageId"
+        app:layout_constraintTop_toTopOf="@id/childImageId"
+        app:layout_constraintBottom_toBottomOf="@id/childImageId"
+        android:id="@+id/childTextViewId"
+        android:text=" Child Helpline "
+        android:textSize="30sp"
+        android:textColor="@color/black"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="12dp"
+        android:layout_marginLeft="12dp"/>
+
+    <ImageView
+        app:layout_constraintStart_toStartOf="@id/childImageId"
+        app:layout_constraintTop_toBottomOf="@id/childImageId"
+        android:layout_marginTop="28dp"
+        android:id="@+id/consumerImageId"
+        android:src="@drawable/consumer"
+        android:layout_width="75dp"
+        android:layout_height="75dp"/>
+
+    <TextView
+        android:onClick="consumerButton"
+        app:layout_constraintStart_toEndOf="@id/consumerImageId"
+        app:layout_constraintTop_toTopOf="@id/consumerImageId"
+        app:layout_constraintBottom_toBottomOf="@id/consumerImageId"
+        android:id="@+id/consumerTextViewId"
+        android:text=" Consumer Protection "
+        android:textSize="30sp"
+        android:textColor="@color/black"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="12dp"
+        android:layout_marginLeft="12dp"/>
+</androidx.constraintlayout.widget.ConstraintLayout>
